@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Обмен растениями - Главная</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+    <h1>Обмен растениями</h1>
+
+    <button id="show-history-btn">Показать историю обменов</button>
+    <div id="history" style="display: none;"></div>
+    
+    <div id="plants"></div>
+
+    
+    <div id="history" style="display:none;"></div>
+
+    <h2>Текущие предложения</h2>
+    <div id="offers"></div>
+
+    <button id="add-offer-btn">Добавить объявление</button>
+
+    <div id="add-offer-form" style="display:none;">
+        <h3>Новое объявление</h3>
+        <input type="text" id="offer-title" placeholder="Название растения">
+        <textarea id="offer-description" placeholder="Описание"></textarea>
+        <input type="file" id="offer-image">
+        <button id="submit-offer-btn">Отправить</button>
+    </div>
+
+    <script src="/js/main.js" defer></script>
+</body>
+</html>
+
+
+<button id="open-chat">💬</button>
+<div id="chat-widget">
+  <div id="chat-header">Задайте вопрос</div>
+  <div id="chat-messages"></div>
+  <div id="chat-input">
+    <button class="question-btn" onclick="sendPredefined('как добавить растение')">Как добавить растение?</button>
+    <button class="question-btn" onclick="sendPredefined('как просмотреть историю обменов')">Как просмотреть историю обменов?</button>
+    <button class="question-btn" onclick="sendPredefined('как откликнуться на объявление')">Как откликнуться на объявление?</button>
+    <button class="question-btn" onclick="sendPredefined('cпасибо')">Cпасибо!</button>
+  </div>
+</div>
